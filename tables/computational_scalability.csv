@@ -1,0 +1,10 @@
+Type,Value,Time (s),Memory (MB)
+Sample Size Scaling,50,0.0020012855529785156,16.0
+Sample Size Scaling,100,0.0010008811950683594,17.0
+Sample Size Scaling,200,0.0009999275207519531,19.0
+Sample Size Scaling,400,0.00299835205078125,23.0
+Qubit Count Scaling,2,0.0019974708557128906,29.0
+Qubit Count Scaling,3,0.0,34.5
+Qubit Count Scaling,4,0.00099945068359375,40.0
+Qubit Count Scaling,5,0.0009942054748535156,45.5
+Qubit Count Scaling,6,0.0015075206756591797,51.0

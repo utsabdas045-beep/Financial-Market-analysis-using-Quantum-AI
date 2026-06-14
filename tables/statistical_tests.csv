@@ -1,0 +1,7 @@
+Quantum Model,Classical Model,n_markets,Mean Qu RMSE,Mean Cl RMSE,W-statistic,p-value,Significant,Effect Size (d)
+QKernel_XGBoost,XGBoost,10,0.007274,0.012721,0.0,0.001,True,-4.5298
+QKernel_XGBoost,LightGBM,10,0.007274,0.012633,0.0,0.001,True,-5.1617
+QKernel_XGBoost,CatBoost,10,0.007274,0.011812,0.0,0.001,True,-4.4851
+QKernel_Ridge,XGBoost,10,0.007741,0.012721,0.0,0.001,True,-4.0504
+QKernel_Ridge,LightGBM,10,0.007741,0.012633,0.0,0.001,True,-4.5755
+QKernel_Ridge,CatBoost,10,0.007741,0.011812,0.0,0.001,True,-3.8436

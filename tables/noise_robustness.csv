@@ -1,0 +1,4 @@
+Configuration,RMSE,R²,DirAcc
+Classical Baseline,0.0122,-0.308,0.505
+Ideal Quantum (Blended),0.008098335459370094,-0.06588923931121826,0.6
+Noisy Quantum (Blended),0.008746202296119701,-0.060618100166320805,0.58

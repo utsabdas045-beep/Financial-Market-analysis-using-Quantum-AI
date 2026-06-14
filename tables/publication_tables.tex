@@ -1,0 +1,63 @@
+% Auto-generated LaTeX tables
+
+\begin{table}
+\caption{R² Across Markets and Models}
+\label{tab:r2_results}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Model & CatBoost & LightGBM & QKernel_Ridge & QKernel_XGBoost & RandomForest & Ridge & VQR & XGBoost \\
+Market &  &  &  &  &  &  &  &  \\
+\midrule
+\textbf{BOVESPA} & -0.069000 & -0.283500 & 0.383500 & 0.422200 & -0.066100 & -0.079600 & 0.346800 & -0.252800 \\
+\textbf{CAC40} & -0.059500 & -0.270000 & 0.368100 & 0.405400 & -0.080700 & -0.205800 & 0.410100 & -0.184700 \\
+\textbf{CSI300} & -0.052000 & -0.208200 & 0.368000 & 0.413600 & -0.035800 & -0.251800 & 0.400700 & -0.232700 \\
+\textbf{DAX} & -0.077500 & -0.194900 & 0.430300 & 0.465300 & -0.074800 & -0.249600 & 0.400300 & -0.216100 \\
+\textbf{DJIA} & -0.077000 & -0.229100 & 0.391400 & 0.416800 & -0.181700 & -0.266300 & 0.432100 & -0.242200 \\
+\textbf{FTSE100} & -0.032900 & -0.196300 & 0.460000 & 0.481200 & -0.032000 & -0.163200 & 0.531400 & -0.132800 \\
+\textbf{NASDAQ} & -0.055000 & -0.171500 & 0.406300 & 0.432900 & -0.310500 & -0.126700 & 0.406400 & -0.313700 \\
+\textbf{NIFTY50} & -0.041400 & -0.241500 & 0.378400 & 0.412800 & -0.063200 & -0.209100 & 0.398200 & -0.157600 \\
+\textbf{SP500} & -0.038400 & -0.164000 & 0.390000 & 0.419100 & -0.188800 & -0.273600 & 0.410400 & -0.308100 \\
+\textbf{SSE} & -0.060700 & -0.161800 & 0.402700 & 0.436000 & -0.168800 & -0.094400 & 0.458300 & -0.243800 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}
+\caption{Quantum Contribution Analysis}
+\label{tab:quantum_contribution}
+\begin{tabular}{llrrrlrrrrrrr}
+\toprule
+Market & Best Classical & Cl RMSE & Cl R² & Cl DirAcc & Best Quantum & Qu RMSE & Qu R² & Qu DirAcc & RMSE Impr (%) & R² Gain & DirAcc Gain (pp) & Quantum Helps \\
+\midrule
+SSE & CatBoost & 0.012328 & -0.060700 & 0.524600 & VQR & 0.005929 & 0.458300 & 0.746700 & 51.910000 & 0.519000 & 22.200000 & True \\
+CSI300 & RandomForest & 0.010938 & -0.035800 & 0.527900 & QKernel_XGBoost & 0.008673 & 0.413600 & 0.700000 & 20.710000 & 0.449500 & 17.210000 & True \\
+SP500 & CatBoost & 0.010908 & -0.038400 & 0.540400 & QKernel_XGBoost & 0.006175 & 0.419100 & 0.722500 & 43.390000 & 0.457500 & 18.210000 & True \\
+NASDAQ & CatBoost & 0.013152 & -0.055000 & 0.526400 & QKernel_XGBoost & 0.007566 & 0.432900 & 0.732000 & 42.470000 & 0.487800 & 20.560000 & True \\
+DJIA & CatBoost & 0.010613 & -0.077000 & 0.524300 & QKernel_XGBoost & 0.006231 & 0.432100 & 0.728000 & 41.290000 & 0.509100 & 20.370000 & True \\
+FTSE100 & RandomForest & 0.009721 & -0.032000 & 0.532600 & QKernel_XGBoost & 0.006327 & 0.531400 & 0.746700 & 34.920000 & 0.563500 & 21.400000 & True \\
+DAX & RandomForest & 0.012658 & -0.074800 & 0.525400 & QKernel_XGBoost & 0.007384 & 0.465300 & 0.720000 & 41.670000 & 0.540100 & 19.460000 & True \\
+CAC40 & CatBoost & 0.012313 & -0.059500 & 0.515800 & QKernel_XGBoost & 0.007776 & 0.410100 & 0.753300 & 36.840000 & 0.469600 & 23.760000 & True \\
+NIFTY50 & CatBoost & 0.010537 & -0.041400 & 0.543700 & QKernel_XGBoost & 0.006532 & 0.412800 & 0.714000 & 38.000000 & 0.454200 & 17.030000 & True \\
+BOVESPA & RandomForest & 0.014831 & -0.066100 & 0.526400 & QKernel_XGBoost & 0.009466 & 0.422200 & 0.733300 & 36.180000 & 0.488300 & 20.690000 & True \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}
+\caption{Statistical Significance Tests}
+\label{tab:stat_tests}
+\begin{tabular}{llrrrrrrr}
+\toprule
+Quantum Model & Classical Model & n_markets & Mean Qu RMSE & Mean Cl RMSE & W-statistic & p-value & Significant & Effect Size (d) \\
+\midrule
+QKernel_XGBoost & XGBoost & 10 & 0.007274 & 0.012721 & 0.000000 & 0.001000 & True & -4.529800 \\
+QKernel_XGBoost & LightGBM & 10 & 0.007274 & 0.012633 & 0.000000 & 0.001000 & True & -5.161700 \\
+QKernel_XGBoost & CatBoost & 10 & 0.007274 & 0.011812 & 0.000000 & 0.001000 & True & -4.485100 \\
+QKernel_Ridge & XGBoost & 10 & 0.007741 & 0.012721 & 0.000000 & 0.001000 & True & -4.050400 \\
+QKernel_Ridge & LightGBM & 10 & 0.007741 & 0.012633 & 0.000000 & 0.001000 & True & -4.575500 \\
+QKernel_Ridge & CatBoost & 10 & 0.007741 & 0.011812 & 0.000000 & 0.001000 & True & -3.843600 \\
+\bottomrule
+\end{tabular}
+\end{table}

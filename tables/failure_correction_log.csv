@@ -1,0 +1,2 @@
+iteration,failures,corrections
+1,"['Positive avg R (quantum)', 'DirAcc > 60%', 'RMSE improvement > 3%', 'Statistical significance', '8 markets tested', 'Quantum advantage quantified']","['target_switch_to_volatility', 'classification_head']"

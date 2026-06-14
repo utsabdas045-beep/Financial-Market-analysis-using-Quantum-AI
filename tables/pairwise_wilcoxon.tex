@@ -1,0 +1,38 @@
+\begin{table}
+\caption{Pairwise Post-Hoc Wilcoxon Signed-Rank Tests with Holm-Bonferroni Correction}
+\label{tab:pairwise_wilcoxon}
+\begin{tabular}{llrrrrrr}
+\toprule
+Model1 & Model2 & W-stat & p-value & Cohen_d & Cliffs_delta & adjusted_p & significant \\
+\midrule
+Ridge & CatBoost & 0.000000 & 0.001953 & 1.884403 & 0.300000 & 0.054688 & False \\
+Ridge & VQR & 0.000000 & 0.001953 & 3.077591 & 0.960000 & 0.054688 & False \\
+Ridge & QKernel_XGBoost & 0.000000 & 0.001953 & 5.765774 & 1.000000 & 0.054688 & False \\
+Ridge & QKernel_Ridge & 0.000000 & 0.001953 & 5.000227 & 1.000000 & 0.054688 & False \\
+RandomForest & XGBoost & 1.000000 & 0.003906 & -1.561439 & -0.220000 & 0.054688 & False \\
+XGBoost & CatBoost & 0.000000 & 0.001953 & 2.772458 & 0.320000 & 0.054688 & False \\
+RandomForest & QKernel_Ridge & 0.000000 & 0.001953 & 3.054061 & 0.980000 & 0.054688 & False \\
+RandomForest & QKernel_XGBoost & 0.000000 & 0.001953 & 3.515911 & 1.000000 & 0.054688 & False \\
+XGBoost & QKernel_Ridge & 0.000000 & 0.001953 & 3.842589 & 1.000000 & 0.054688 & False \\
+RandomForest & VQR & 0.000000 & 0.001953 & 2.168526 & 0.880000 & 0.054688 & False \\
+LightGBM & VQR & 0.000000 & 0.001953 & 2.944291 & 0.960000 & 0.054688 & False \\
+LightGBM & QKernel_XGBoost & 0.000000 & 0.001953 & 4.896782 & 1.000000 & 0.054688 & False \\
+LightGBM & QKernel_Ridge & 0.000000 & 0.001953 & 4.340747 & 1.000000 & 0.054688 & False \\
+LightGBM & CatBoost & 0.000000 & 0.001953 & 3.051374 & 0.320000 & 0.054688 & False \\
+XGBoost & VQR & 0.000000 & 0.001953 & 2.727693 & 0.940000 & 0.054688 & False \\
+XGBoost & QKernel_XGBoost & 0.000000 & 0.001953 & 4.297348 & 1.000000 & 0.054688 & False \\
+CatBoost & VQR & 0.000000 & 0.001953 & 2.363157 & 0.840000 & 0.054688 & False \\
+QKernel_Ridge & QKernel_XGBoost & 0.000000 & 0.001953 & 2.660861 & 0.320000 & 0.054688 & False \\
+CatBoost & QKernel_Ridge & 0.000000 & 0.001953 & 3.646383 & 0.980000 & 0.054688 & False \\
+CatBoost & QKernel_XGBoost & 0.000000 & 0.001953 & 4.254895 & 1.000000 & 0.054688 & False \\
+QKernel_XGBoost & VQR & 6.000000 & 0.027344 & -0.971779 & -0.300000 & 0.218750 & False \\
+RandomForest & LightGBM & 10.000000 & 0.083984 & -0.715940 & -0.200000 & 0.587891 & False \\
+RandomForest & CatBoost & 10.000000 & 0.083984 & 0.659388 & 0.140000 & 0.587891 & False \\
+Ridge & RandomForest & 13.000000 & 0.160156 & 0.498759 & 0.180000 & 0.800781 & False \\
+QKernel_Ridge & VQR & 13.000000 & 0.160156 & -0.420601 & -0.120000 & 0.800781 & False \\
+XGBoost & LightGBM & 24.000000 & 0.769531 & 0.199702 & 0.000000 & 1.000000 & False \\
+Ridge & LightGBM & 20.000000 & 0.492188 & -0.297544 & -0.020000 & 1.000000 & False \\
+Ridge & XGBoost & 22.000000 & 0.625000 & -0.426666 & 0.020000 & 1.000000 & False \\
+\bottomrule
+\end{tabular}
+\end{table}
